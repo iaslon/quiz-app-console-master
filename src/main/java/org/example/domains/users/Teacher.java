@@ -1,0 +1,41 @@
+package org.example.domains.users;
+
+import jakarta.persistence.*;
+import lombok.*;
+import org.example.domains.auth.AuthUser;
+import org.example.domains.subject.Subject;
+
+import java.util.List;
+
+/**
+ * @author "Khazratov Aslonbek"
+ * @since 10/07/2022 00:58 (Monday)
+ * quiz-app-console-master/IntelliJ IDEA
+ */
+
+@Entity
+@Table(name = "teachers")
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Data
+@ToString
+public class Teacher {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private String surname;
+
+    @ManyToMany(targetEntity = Subject.class, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable(name = "teacher_subject",
+            joinColumns =@JoinColumn(name = "teacher_id"),
+            inverseJoinColumns =@JoinColumn(name = "subject_id")
+    )
+    private List<Subject> subjectList;
+
+    @OneToOne(targetEntity = AuthUser.class, cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id", nullable = false)
+    private AuthUser user;
+}

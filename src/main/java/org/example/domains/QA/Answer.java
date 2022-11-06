@@ -1,0 +1,37 @@
+package org.example.domains.QA;
+
+import jakarta.persistence.*;
+import lombok.*;
+import org.example.domains.Auditable;
+import org.example.enums.AnswerStatus;
+
+import java.sql.Timestamp;
+import java.util.List;
+
+/**
+ * @author "Khazratov Aslonbek"
+ * @since 10/07/2022 00:58 (Monday)
+ * quiz-app-console-master/IntelliJ IDEA
+ */
+
+@Entity
+@Table(name = "answers")
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@Getter
+
+public class Answer extends Auditable {
+
+    private String body;
+
+    @Enumerated(EnumType.STRING)
+    private AnswerStatus status;
+
+    @Builder(builderMethodName = "childBuilder")
+    public Answer(Long id, Timestamp createdAt, Long createdBy, Timestamp updatedAt, Long updatedBy, Boolean deleted, String body, AnswerStatus status) {
+        super(id, createdAt, createdBy, updatedAt, updatedBy, deleted);
+        this.body = body;
+        this.status = status;
+    }
+}
