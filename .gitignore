@@ -7,3 +7,36 @@
 
 # Project exclude paths
 /target/
+/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_3.xml
+/.idea/.gitignore
+/.idea/dataSources.xml
+/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml
+/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml
+/.idea/libraries/Maven__com_google_code_gson_gson_2_10.xml
+/.idea/libraries/Maven__com_sun_activation_jakarta_activation_2_0_1.xml
+/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_4_0_1.xml
+/.idea/libraries/Maven__com_zaxxer_HikariCP_5_0_1.xml
+/.idea/libraries/Maven__jakarta_inject_jakarta_inject_api_2_0_0.xml
+/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_3_0_0.xml
+/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_2_0_0.xml
+/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_3_0_1.xml
+/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_18.xml
+/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_10_1.xml
+/.idea/libraries/Maven__org_baseUtils_baseUtils_1_0_SNAPSHOT.xml
+/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml
+/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_core_3_0_2.xml
+/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_3_0_2.xml
+/.idea/libraries/Maven__org_glassfish_jaxb_txw2_3_0_2.xml
+/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_6_0_2_Final.xml
+/.idea/libraries/Maven__org_hibernate_orm_hibernate_core_6_1_5_Final.xml
+/.idea/libraries/Maven__org_hibernate_orm_hibernate_hikaricp_6_1_5_Final.xml
+/.idea/libraries/Maven__org_javassist_javassist_3_28_0_GA.xml
+/.idea/libraries/Maven__org_jboss_jandex_2_4_2_Final.xml
+/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_3_Final.xml
+/.idea/libraries/Maven__org_mindrot_jbcrypt_0_4.xml
+/.idea/libraries/Maven__org_postgresql_postgresql_42_5_0.xml
+/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml
+/.idea/libraries/Maven__org_reflections_reflections_0_10_2.xml
+/.idea/libraries/Maven__org_slf4j_slf4j_simple_2_0_3.xml
+/.idea/modules.xml
+/.idea/quiz-app-console-master.iml
